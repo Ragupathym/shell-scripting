@@ -1,0 +1,10 @@
+#!/bin/bash
+
+Files=$(ls /var/log/messages*)
+echo $Files | sed 's/ /\n/g' > out.txt
+cat out.txt
+a=out.txt
+
+for line in $(cat "$a");do
+   cat $line | grep -i "ERROR"
+done 
