@@ -1,0 +1,11 @@
+Bash Expansion and Substitutions
+
+Representation 
+
+~                                 Tilde expansion
+{...}                             Brace expansion
+${...}                            Parameter expansion
+$(...)                            Command substitution
+$((...))                          Arithmetic expansion
+
+
